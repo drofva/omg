@@ -1,7 +1,8 @@
 body{
     max-width: 1062px ;
+    width: 100%;
     margin: auto;
-    background: url("./qqq.jpg") no-repeat center;
+    background: url("./qqq.jpg") repeat center;
     height: 100%;
     color: #fff;
 }
@@ -25,7 +26,7 @@ body{
 
 .menu-item a{
     text-decoration:none;
-    color: #ff3c00;
+    color: rgb(248, 91, 0);
 }
 .active{
     font-weight: bold;
@@ -35,12 +36,20 @@ body{
     font-weight:500;
     font-size: 53px;
     line-height: 62px ;
+    color: rgb(255, 255, 255);
 }
 
+.quote{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    opacity: 0.7;
+    margin-left: 0;
+}
 
 .button-order{
     all: unset;
-    background: #ff7322;
+    background: rgb(90, 44, 7);
     border-radius: 5px;
     font-weight: 500;
     font-size: 16px;
@@ -51,54 +60,3 @@ body{
 .main{
     max-width: 500px;
 }
-#callback {
-    width: 300px;
-    height: 150px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    bottom: 30px;
-    transform: translateX(-100%);
-   }
-
-#callback p {
-    color: #6e3535;
-    padding: 22px;
-   }
-#callback::after {
-    content: 'Обратная связь';
-    background-color: rgb(92, 32, 13);
-    text-align: center;
-    border-radius: 0 0 8px 8px;
-    padding: 5px 0;
-    width: 150px;
-    position: absolute;
-    left: 300px;
-    transform: rotate(-90deg);
-    transform-origin:0;
-    color: #fff;
-   }
-
-#callback:hover {
-    transform: translateX(0);
-    transition: all 0.7s ease;
-   }
-   
-
-   html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
- }
- 
- img {
-    width: 100%;
-    height: 100%;
- }
- body{
-    background-image: url("./qqq.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
- }
